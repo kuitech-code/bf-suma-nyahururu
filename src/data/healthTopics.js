@@ -1,0 +1,97 @@
+export const healthTopics = [
+  {
+    id: 'cardiovascular-health',
+    title: 'Cardiovascular Health',
+    description: 'Heart and circulation health.',
+    productIds: [
+      'micro-o2-cycle-tablets',
+      'cere-brain-tablets',
+      'detoxilive-capsules',
+      'gluco-blocker-tea',
+      'pressure-free-tea',
+    ],
+  },
+    {
+    id: 'bone-joint-health',
+    title: 'Bone & Joint Health',
+    description: 'Bone and joint health.',
+    productIds: [
+      'arthroxtra-tablets',
+      'gluzo-joint-f-capsules',
+      'zaminocal-plus-capsules',
+    ],
+  },
+  {
+    id: 'immune-support',
+    title: 'Immune Support',
+    description: 'Immune health.',
+    productIds: [
+      'four-in-one-reishi-coffee',
+      'four-in-one-ginseng-coffee',
+      'four-in-one-cordyceps-coffee',
+      'ganoderma-spores',
+      'ganoderma-spores-deluxe',
+      'yunzhi-essence-capsules',
+      'quad-reishi',
+    ],
+  },
+    {
+    id: 'healthy-aging',
+    title: 'Healthy Aging & NMN',
+    description: 'Healthy aging and NMN.',
+    productIds: [
+      'nmn-capsule',
+      'nmn-duo-release',
+      'nmn-coffee',
+      'nmn-sharp-mind',
+      'fem-inergy',
+      'youth-ever',
+    ],
+  },
+  {
+    id: 'digestive-gut-health',
+    title: 'Digestive & Gut Health',
+    description: 'Digestive and gut health.',
+    productIds: [
+      'nt-diarr-pills',
+      'ez-xlim',
+      'consti-relax',
+      'veggie-veggie',
+      'novel-defile-capsules',
+      'probio3-plus-probiotics',
+    ],
+  },
+    {
+    id: 'personal-care',
+    title: 'Personal Care',
+    description: 'Personal care.',
+    productIds: [
+      'femicare',
+      'anatic-herbal-essence-soap',
+      'dr-ts-toothpaste',
+      'cool-roll',
+    ],
+  },
+  {
+    id: 'skincare',
+    title: 'Skincare',
+    description: 'Skincare.',
+    productIds: [
+      'youth-refreshing-facial-cleanser',
+      'youth-essence-toner',
+      'youth-essence-lotion',
+      'youth-essence-facial-cream',
+      'youth-essence-facial-mask',
+    ],
+  },
+  {
+    id: 'mens-health',
+    title: "Men's Health",
+    description: "Men's health.",
+    productIds: [
+      'prostat-relax-capsules',
+      'x-power-man-tablets',
+      'x-power-man-coffee',
+    ],
+  },
+]
