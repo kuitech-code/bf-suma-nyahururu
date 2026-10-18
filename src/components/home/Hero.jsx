@@ -52,9 +52,9 @@ function Hero() {
         </p>
 
         <div className="hero__actions">
-          <a className="hero__button" href="#contact">
+          <Link className="hero__button" to="/#contact">
             Book a screening <span aria-hidden="true">→</span>
-          </a>
+          </Link>
           <Link className="hero__button hero__button--secondary" to="/products">
             Explore products
           </Link>
