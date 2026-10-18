@@ -11,12 +11,68 @@
   background: linear-gradient(120deg, #dff4e4, #fff 48%, #d9effa);
 }
 
+.health-topics-page__intro--banner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.health-topics-page__intro--banner::after {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 1rem;
+  width: 48%;
+  height: 90%;
+  transform: translateY(-50%);
+  background: url('../assets/bg-health-topic-banner.jpg') center / cover no-repeat;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, #000 20%, transparent 100%);
+  content: '';
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.health-topics-page__intro--banner > * {
+  position: relative;
+  z-index: 1;
+}
+
 .health-topics-page__intro--detail {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   max-width: 56rem;
   margin-inline: auto;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgb(236 248 239 / 96%) 0%,
+      rgb(255 255 255 / 91%) 58%,
+      rgb(255 255 255 / 35%) 100%
+    ),
+    linear-gradient(120deg, #dff4e4, #fff 48%, #d9effa);
+}
+
+.health-topics-page__intro--detail::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0 0 0 50%;
+  background-image: var(--health-topic-card-background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 42%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, #000 42%, transparent 100%);
+  content: '';
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+.health-topic-detail__info {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
 }
 
 .health-topic-detail__info > p:not(.health-topics-page__eyebrow) {
@@ -26,46 +82,16 @@
   font-size: 1.05rem;
 }
 
+.health-topic-detail__tagline {
+  margin: -0.25rem 0 1rem;
+  color: var(--color-green);
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+}
+
 .health-topic-detail__info > a {
   color: var(--color-purple);
   font-weight: 700;
   text-underline-offset: 0.2em;
-}
-
-.health-topic-detail__visual {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  min-height: 9rem;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, #dff4e4, #fff 48%, #d9effa);
-}
-
-.health-topic-detail__visual::before {
-  position: absolute;
-  z-index: 0;
-  inset: -4%;
-  background-image: var(--health-topic-card-background);
-  background-position: center 38%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-  filter: blur(3px);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 35%);
-  mask-image: linear-gradient(90deg, transparent 0%, #000 35%);
-  opacity: 0.5;
-}
-
-@media (min-width: 22rem) {
-  .health-topics-page__intro--detail {
-    grid-template-columns: minmax(0, 1.2fr) minmax(5rem, 0.8fr);
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .health-topic-detail__visual {
-    min-height: 12rem;
-  }
 }
 
 .health-topics-page__eyebrow {
@@ -101,9 +127,34 @@
     border-radius: 2rem;
   }
 
-  .health-topic-detail__visual {
-    min-height: 13rem;
+  .health-topics-page__intro--banner::after {
+    right: 1rem;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
   }
+
+  .health-topics-page__intro--banner > * {
+    max-width: 58%;
+  }
+
+  .health-topics-page__intro--banner h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .health-topics-page__intro--banner > p:last-child {
+    max-width: min(58%, 42rem);
+  }
+
+  .health-topic-detail__info {
+    max-width: min(58%, 42rem);
+  }
+
+  .health-topics-page__intro--detail::after {
+    left: 48%;
+    opacity: 1;
+  }
+
 }
 
 .health-topics-grid {
@@ -152,16 +203,16 @@
 .health-topic-card::before {
   position: absolute;
   z-index: 0;
-  inset: 0 0 0 30%;
+  inset: 0 0 0 24%;
   background-image: var(--health-topic-card-background);
   background-position: center 38%;
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
-  filter: blur(3px);
+  filter: blur(1px);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 35%);
   mask-image: linear-gradient(90deg, transparent 0%, #000 35%);
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 .health-topic-card > * {

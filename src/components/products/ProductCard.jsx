@@ -5,19 +5,23 @@ function ProductCard({ product, compact = false }) {
     <article className={`product-card${compact ? ' product-card--compact' : ''}`}>
       <img
         className="product-card__image"
-        src={`${import.meta.env.BASE_URL}images/products/sample-product.png`}
-        alt="Sample BF SUMA product packaging"
+        src={
+          product.image ??
+          `${import.meta.env.BASE_URL}images/products/sample-product.png`
+        }
+        alt={
+          product.image
+            ? `${product.name} product image`
+            : 'Sample BF SUMA products (placeholder image)'
+        }
       />
       {!compact && <p className="product-card__category">{product.category}</p>}
       <h2>{product.name}</h2>
       {!compact && (
         <>
-          <p className="product-card__price">
-            {typeof product.price === 'number'
-              ? `KSh ${product.price.toLocaleString('en-KE')}`
-              : 'Price'}
-          </p>
-          {product.packaging && <p>Packaging: {product.packaging}</p>}
+          {product.description && (
+            <p className="product-card__description">{product.description}</p>
+          )}
         </>
       )}
 

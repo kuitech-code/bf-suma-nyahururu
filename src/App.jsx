@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/Footer.jsx'
+import FloatingCall from './components/FloatingCall.jsx'
 import Navbar from './components/Navbar.jsx'
 import HomePage from './pages/HomePage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
@@ -45,6 +46,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <FloatingCall />
     </>
   )
 }

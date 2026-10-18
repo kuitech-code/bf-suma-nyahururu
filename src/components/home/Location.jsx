@@ -5,11 +5,38 @@ function Location() {
       id="location"
       aria-labelledby="location-title"
     >
-      <p className="location__eyebrow">Visit us</p>
-      <h2 id="location-title">Find BF Suma Nyahururu</h2>
-      <p className="location__address">
-        Find us at Mbaria Complex, Kenyatta Road, Nyahururu.
-      </p>
+      <div className="location__summary">
+        <p className="location__eyebrow">Visit us</p>
+        <h2 id="location-title">Find BF Suma Nyahururu</h2>
+        <p className="location__address">
+          Find us at Mbaria Complex, Kenyatta Road, Nyahururu.
+        </p>
+        <dl className="location__hours">
+          <div>
+            <dt>Monday–Friday</dt>
+            <dd>9:00 AM–5:00 PM</dd>
+          </div>
+          <div>
+            <dt>Saturday</dt>
+            <dd>9:00 AM–1:00 PM</dd>
+          </div>
+          <div>
+            <dt>Sunday</dt>
+            <dd>Closed</dd>
+          </div>
+        </dl>
+      </div>
+      <aside className="location__visual" aria-label="BF Suma Nyahururu is at Mbaria Complex on Kenyatta Road">
+        <div className="location__visual-pin" aria-hidden="true">
+          <svg viewBox="0 0 64 80" focusable="false">
+            <path d="M32 2C15.4 2 2 15.3 2 31.8 2 53.6 32 78 32 78s30-24.4 30-46.2C62 15.3 48.6 2 32 2Z" />
+            <circle cx="32" cy="31" r="10" />
+          </svg>
+        </div>
+        <p className="location__visual-label">Your wellness clinic</p>
+        <p className="location__visual-name">BF Suma Nyahururu</p>
+        <p className="location__visual-address">Mbaria Complex<br />Kenyatta Road</p>
+      </aside>
       <div className="location__map">
         <iframe
           title="Map to Mbaria Complex, Kenyatta Road, Nyahururu"

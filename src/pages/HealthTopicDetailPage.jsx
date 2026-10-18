@@ -30,16 +30,16 @@ function HealthTopicDetailPage() {
       <section
         className="health-topics-page__intro health-topics-page__intro--detail"
         style={{
-          '--health-topic-card-background': `url("${import.meta.env.BASE_URL}images/health-topics/health-topic-35.jpeg")`,
+          '--health-topic-card-background': `url("${topic.image}")`,
         }}
       >
         <div className="health-topic-detail__info">
           <p className="health-topics-page__eyebrow">BF Suma Nyahururu</p>
           <h1>{topic.title}</h1>
+          <h2 className="health-topic-detail__tagline">{topic.tagline}</h2>
           <p>{topic.description}</p>
           <Link to="/health-topics">Back to all Health Topics</Link>
         </div>
-        <div className="health-topic-detail__visual" aria-hidden="true" />
       </section>
 
       {relatedProducts.length > 0 && (

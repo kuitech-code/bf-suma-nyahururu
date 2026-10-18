@@ -77,9 +77,6 @@ function Navbar() {
           aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <span className="navbar__toggle-label">
-            {menuOpen ? 'Close' : 'Menu'}
-          </span>
           <span className="navbar__icon" aria-hidden="true">
             <span />
             <span />
@@ -103,10 +100,6 @@ function Navbar() {
 
           <Link to="/#about" className="navbar__link" onClick={closeMenu}>
             About
-          </Link>
-
-          <Link to="/#contact" className="navbar__link" onClick={closeMenu}>
-            Contact
           </Link>
 
           <Link to="/#contact" className="navbar__cta" onClick={closeMenu}>
