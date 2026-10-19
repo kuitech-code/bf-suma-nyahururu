@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/Footer.jsx'
 import FloatingCall from './components/FloatingCall.jsx'
@@ -13,18 +13,16 @@ import HealthTopicDetailPage from './pages/HealthTopicDetailPage.jsx'
 function ScrollToSection() {
   const { pathname, hash } = useLocation()
 
-  useEffect(() => {
-    if (!hash) return
+  useLayoutEffect(() => {
+    if (!hash) {
+      window.scrollTo(0, 0)
+      return
+    }
 
     const sectionId = hash.slice(1)
-
-    const frameId = window.requestAnimationFrame(() => {
-      document
-        .getElementById(sectionId)
-        ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    })
-
-    return () => window.cancelAnimationFrame(frameId)
+    document
+      .getElementById(sectionId)
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [pathname, hash])
 
   return null

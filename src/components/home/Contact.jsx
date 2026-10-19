@@ -17,7 +17,6 @@ function Contact() {
       `Name: ${formData.get('name')}`,
       `Phone: ${formData.get('phone')}`,
       `Preferred date: ${formData.get('date') || 'Flexible'}`,
-      `Preferred time: ${formData.get('time') || 'Flexible'}`,
       `What I would like help with: ${formData.get('message') || 'I would like to discuss this during my appointment.'}`
     ].join('\n')
 
@@ -90,18 +89,10 @@ function Contact() {
             Preferred date
             <input name="date" type="date" />
           </label>
-          <label>
-            Preferred time
-            <select name="time" defaultValue="">
-              <option value="">Choose a time (optional)</option>
-              <option>Morning</option>
-              <option>Afternoon</option>
-            </select>
-          </label>
         </div>
         <label className="contact__message-label">
           What would you like help with?
-          <textarea name="message" rows="4" />
+          <textarea name="message" rows="3" />
         </label>
         <button className="contact__submit" type="submit">
           Book Appointment
