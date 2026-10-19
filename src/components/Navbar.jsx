@@ -73,7 +73,6 @@ function Navbar() {
           onClick={closeMenu}
         >
           <img className="navbar__logo" src={logo} alt="" />
-          <span className="navbar__brand-name">and wellness</span>
         </NavLink>
 
         <button
