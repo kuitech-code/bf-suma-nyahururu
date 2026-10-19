@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/logo2.png'
+import SocialLinks from './home/SocialLinks.jsx'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -59,6 +60,11 @@ function Navbar() {
         ref={navbarRef}
         className={`site-header${headerHidden ? ' site-header--hidden' : ''}`}
       >
+        <div className="navbar__socialbar">
+          <div className="navbar__socialbar-inner">
+            <SocialLinks variant="top" />
+          </div>
+        </div>
         <nav className="navbar" aria-label="Main navigation">
         <NavLink
           className="navbar__brand"
