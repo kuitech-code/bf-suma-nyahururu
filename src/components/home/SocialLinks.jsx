@@ -1,8 +1,16 @@
 const platforms = [
-  { name: 'Facebook', icon: 'f' },
-  { name: 'Facebook Group', icon: 'group' },
+  {
+    name: 'Facebook',
+    icon: 'f',
+    href: 'https://web.facebook.com/profile.php?id=100054501547646&__tn__=%2Cd',
+  },
+  {
+    name: 'Facebook Group',
+    icon: 'group',
+    href: 'https://web.facebook.com/photo/?fbid=1814276032383885&set=p.1814276032383885',
+  },
   // { name: 'Instagram', icon: '◎' },
-  { name: 'TikTok', icon: '♪' },
+  { name: 'TikTok', icon: '♪', href: '#' },
   // { name: 'YouTube', icon: '▶' },
 ]
 
@@ -18,10 +26,12 @@ function SocialLinks({ variant = 'default' }) {
         {platforms.map((platform) => (
           <li key={platform.name}>
             <a
-              href="#"
-              onClick={keepPlaceholderFromNavigating}
+              href={platform.href ?? '#'}
+              onClick={platform.href ? undefined : keepPlaceholderFromNavigating}
               aria-label={platform.name}
               title={platform.name}
+              target={platform.href ? '_blank' : undefined}
+              rel={platform.href ? 'noreferrer' : undefined}
             >
               {platform.icon === 'group' ? (
                 <svg
