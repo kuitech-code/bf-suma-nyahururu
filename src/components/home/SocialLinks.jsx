@@ -21,7 +21,9 @@ function SocialLinks({ variant = 'default' }) {
 
   return (
     <div className={`social-links social-links--${variant}`}>
-      <span className="social-links__label">Follow BF Suma</span>
+      <span className="social-links__label">
+        {variant === 'top' ? 'Follow us' : 'Follow Suma Health'}
+      </span>
       <ul className="social-links__list">
         {platforms.map((platform) => (
           <li key={platform.name}>

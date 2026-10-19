@@ -9,11 +9,12 @@ function Technologies() {
       aria-labelledby="technologies-title"
     >
       <header className="technologies__heading">
-        <p className="technologies__eyebrow">BF Suma high-tech</p>
+        <p className="technologies__eyebrow">Product technologies</p>
         <h2 id="technologies-title">Technology behind the products</h2>
         <p>
-          BF Suma describes a range of processing technologies used in its
-          products, from mineral formulations to herbal extracts.
+          The product manufacturer, BF Suma, describes a range of processing
+          technologies used in its products, from mineral formulations to
+          herbal extracts.
         </p>
       </header>
 
@@ -21,7 +22,7 @@ function Technologies() {
         <figure className="technologies__visual">
           <img
             src={clinicShelves}
-            alt="BF Suma products displayed on shelves at the clinic"
+            alt="BF Suma products displayed on shelves at Suma Health and Wellness"
           />
           <figcaption>BF Suma products available in Nyahururu</figcaption>
         </figure>

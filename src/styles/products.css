@@ -45,6 +45,11 @@
   text-transform: uppercase;
 }
 
+.products-page__eyebrow--brand {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
 .products-page h1 {
   margin: 0 0 1rem;
   color: var(--color-purple);

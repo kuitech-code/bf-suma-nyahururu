@@ -6,14 +6,14 @@ import {
 
 function Contact() {
   const bookingMessage =
-    'Hi, I’d like to book a consultation at BF Suma Nyahururu. Please let me know the available appointment times.'
+    'Hi, I’d like to book a consultation at Suma Health and Wellness in Nyahururu. Please let me know the available appointment times.'
 
   function handleBookingSubmit(event) {
     event.preventDefault()
 
     const formData = new FormData(event.currentTarget)
     const message = [
-      'Hello BF Suma Nyahururu, I would like to book a consultation.',
+      'Hello Suma Health and Wellness, I would like to book a consultation.',
       `Name: ${formData.get('name')}`,
       `Phone: ${formData.get('phone')}`,
       `Preferred date: ${formData.get('date') || 'Flexible'}`,

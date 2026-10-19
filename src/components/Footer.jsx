@@ -8,15 +8,16 @@ function Footer() {
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div className="site-footer__brand-block">
-          <Link className="site-footer__brand" to="/" aria-label="BF Suma Nyahururu home">
-            <img src={logo} alt="BF Suma Nyahururu" />
+          <Link className="site-footer__brand" to="/" aria-label="Suma Health and Wellness home">
+            <img src={logo} alt="Suma Health and Wellness" />
+            {/* <span>and wellness</span> */}
           </Link>
           <p>
             Supporting your wellness journey right here in Nyahururu and around Kenya. Our clinic is dedicated to bringing world-class healthcare, advanced cellular nutrition and professional health screenings directly to our local community so you can live a vibrant, healthy life.
           </p>
         </div>
 
-        <nav className="site-footer__nav" aria-label="Explore BF Suma">
+        <nav className="site-footer__nav" aria-label="Explore Suma Health and Wellness">
           <h2>Explore</h2>
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
@@ -26,7 +27,7 @@ function Footer() {
 
         <div className="site-footer__visit">
           <h2>Visit us</h2>
-          <p>Mbaria Complex, Kenyatta Road<br />Nyahururu</p>
+          <p>Mbaria Complex bld, Kenyatta Road<br />Nyahururu</p>
           <a href={`tel:${DISPLAY_PHONE_NUMBER.replaceAll(' ', '')}`}>
             {DISPLAY_PHONE_NUMBER}
           </a>
@@ -34,7 +35,7 @@ function Footer() {
         </div>
 
         <div className="site-footer__copyright">
-          <p>&copy; {new Date().getFullYear()} BF Suma Nyahururu</p>
+          <p>&copy; {new Date().getFullYear()} Suma Health and Wellness</p>
           <a
             href="https://wa.me/254741194959"
             target="_blank"

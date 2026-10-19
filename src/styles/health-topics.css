@@ -103,6 +103,11 @@
   text-transform: uppercase;
 }
 
+.health-topics-page__eyebrow--brand {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
 .health-topics-page h1 {
   margin: 0 0 1rem;
   color: var(--color-purple);
@@ -162,6 +167,54 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 1.5rem;
+}
+
+.health-concerns {
+  margin-top: 2rem;
+  padding: 1.5rem 1.25rem;
+  border-inline-start: 5px solid var(--color-magenta);
+  background: linear-gradient(120deg, #f9e7f1, #fff 52%, #e7f3f7);
+}
+
+.health-concerns h2 {
+  margin: 0 0 0.75rem;
+  color: var(--color-purple);
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+}
+
+.health-concerns__intro {
+  max-width: 48rem;
+  margin: 0 0 1rem;
+  color: #5f535c;
+}
+
+.health-concerns__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.health-concerns__list li {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 2px solid var(--color-blue);
+  background: rgb(255 255 255 / 76%);
+  color: var(--color-purple);
+  font-weight: 700;
+}
+
+.health-concerns__list li:nth-child(4n + 2) { border-color: var(--color-magenta); }
+.health-concerns__list li:nth-child(4n + 3) { border-color: var(--color-green); }
+.health-concerns__list li:nth-child(4n) { border-color: var(--color-orange); }
+
+.health-concerns__disclaimer {
+  max-width: 60rem;
+  margin: 1.25rem 0 0;
+  color: #5f535c;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .health-topic-card {
@@ -251,6 +304,14 @@
 @media (min-width: 40rem) {
   .health-topics-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .health-concerns {
+    padding: 2rem;
+  }
+
+  .health-concerns__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

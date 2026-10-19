@@ -90,6 +90,10 @@ a {
   --hero-accent: var(--color-magenta);
 }
 
+.hero--orange {
+  --hero-accent: var(--color-orange);
+}
+
 .hero__content {
   max-width: 46rem;
   align-self: center;
@@ -243,6 +247,10 @@ a {
   --hero-image-wash: rgb(212 20 120 / 10%);
 }
 
+.hero--orange .hero__showcase {
+  --hero-image-wash: rgb(243 111 13 / 9%);
+}
+
 .hero__slide figcaption {
   position: absolute;
   right: 0;
@@ -388,12 +396,22 @@ a {
 
 .navbar__brand {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .navbar__logo {
   width: min(52vw, 11rem);
   /* padding: 1.4rem 0; */
+}
+
+.navbar__brand-name {
+  align-self: flex-end;
+  margin-top: -0.15rem;
+  color: #743858;
+  font-size: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
 }
 
 .navbar__toggle {
@@ -596,6 +614,12 @@ a {
   text-transform: uppercase;
 }
 
+.hero__eyebrow.hero__eyebrow--brand,
+.about__eyebrow.about__eyebrow--brand {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
 .about h2 {
   max-width: 20ch;
   margin: 0 0 1rem;
@@ -643,7 +667,7 @@ a {
 
 .about__image-wrap img {
   width: 100%;
-  max-height: 17rem;
+  max-height: 34rem;
   object-fit: contain;
 }
 
@@ -1694,7 +1718,9 @@ a {
 }
 
 .site-footer__brand {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: min(100%, 12rem);
   text-decoration: none;
 }
@@ -1702,6 +1728,15 @@ a {
 .site-footer__brand img {
   width: 100%;
   height: auto;
+}
+
+.site-footer__brand span {
+  align-self: flex-end;
+  margin-top: -0.2rem;
+  color: #f4d8e7;
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
 }
 
 .site-footer__brand-block p,

@@ -53,7 +53,7 @@ function ProductDetailPage() {
         </div>
 
         <div className="product-detail__info">
-          <p className="products-page__eyebrow">BF Suma Nyahururu</p>
+          <p className="products-page__eyebrow products-page__eyebrow--brand">Suma Health and Wellness</p>
           <p>{product.category}</p>
           <h1>{product.name}</h1>
 

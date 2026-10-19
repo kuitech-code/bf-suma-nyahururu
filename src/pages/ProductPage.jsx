@@ -7,7 +7,7 @@ function ProductPage() {
   return (
     <main className="products-page">
       <section className="products-page__intro products-page__intro--banner">
-        <p className="products-page__eyebrow">BF Suma Nyahururu</p>
+        <p className="products-page__eyebrow products-page__eyebrow--brand">Suma Health and Wellness</p>
         <h1>Our Products</h1>
         <p>
           Explore our clinic’s handpicked selection of therapeutic essentials. Formulated with high-quality active ingredients to help you look, feel and live your best every day.

@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
-import productRange from '../../assets/products-banner-bg.png'
-import { companyMilestones } from '../../data/company.js'
+import doctorPhoto from '../../assets/Dr Charles.jpg'
 
 function About() {
   return (
@@ -10,42 +8,47 @@ function About() {
       aria-labelledby="about-title"
     >
       <div className="about__story">
-        <p className="about__eyebrow">About BF Suma</p>
-        <h2 id="about-title">A wellness company with a global story</h2>
+        <p className="about__eyebrow about__eyebrow--brand">About Suma Health and Wellness</p>
+        <h2 id="about-title">The Story Behind Suma Nyahururu</h2>
         <p>
-          BF Suma began in 1993 as a pharmaceutical manufacturer and later
-          expanded into health products. The company entered African markets in
-          2004 and the Kenyan market in 2011.
+          For Dr. Charles, wellness is more than a profession; it is a passion
+          rooted in a genuine desire to see people live healthier, happier and
+          more fulfilling lives.
         </p>
         <p>
-          Its approach brings together Eastern and Western health perspectives,
-          with products across areas such as cardiovascular, bone and joint,
-          digestive, immune, personal care and skincare wellness.
+          His journey has been driven by a deep interest in people’s well-being
+          and a commitment to helping individuals take a more active role in
+          caring for their health. Through his work at Suma Nyahururu, he strives
+          to create a welcoming environment where every client feels heard,
+          valued and supported.
         </p>
-        <p className="about__standards">
-          Company information lists GMP certification in 2000, a Class A
-          certificate in 2012, and KEBS certification for products in Kenya.
+        <p>
+          What inspires him most is the opportunity to interact with people from
+          different walks of life, understand their wellness concerns and guide
+          them towards making informed choices about their health. He believes
+          that every person deserves attention, respect and guidance that
+          considers their individual needs.
         </p>
-        {/* <Link className="about__technology-link" to="/#technologies">
-          Explore BF Suma technologies <span aria-hidden="true">→</span>
-        </Link> */}
+        <p>
+          His dedication goes beyond the clinic doors. It is reflected in his
+          desire to educate, encourage and build lasting relationships with the
+          people he serves. For him, every client interaction is an opportunity
+          to make a positive contribution to someone’s wellness journey.
+        </p>
+        <p>
+          At Suma Health and Wellness, his vision is to build a trusted wellness
+          centre where people can access health screening, learn about products,
+          receive attentive service and feel encouraged as they pursue their
+          personal wellness goals.
+        </p>
       </div>
 
       <figure className="about__visual">
         <div className="about__image-wrap">
-          <img src={productRange} alt="A selection of BF Suma products" />
+          <img src={doctorPhoto} alt="Dr. Charles at Suma Health and Wellness" />
         </div>
-        <figcaption>Products across a range of wellness categories</figcaption>
+        <figcaption>Dr. Charles, Suma Health and Wellness, Nyahururu</figcaption>
       </figure>
-
-      <ol className="about__milestones" aria-label="BF Suma company milestones">
-        {companyMilestones.map((milestone) => (
-          <li key={milestone.year}>
-            <span>{milestone.year}</span>
-            <p>{milestone.detail}</p>
-          </li>
-        ))}
-      </ol>
     </section>
   )
 }

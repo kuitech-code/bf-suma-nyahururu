@@ -34,7 +34,7 @@ function HealthTopicDetailPage() {
         }}
       >
         <div className="health-topic-detail__info">
-          <p className="health-topics-page__eyebrow">BF Suma Nyahururu</p>
+          <p className="health-topics-page__eyebrow health-topics-page__eyebrow--brand">Suma Health and Wellness</p>
           <h1>{topic.title}</h1>
           <h2 className="health-topic-detail__tagline">{topic.tagline}</h2>
           <p>{topic.description}</p>

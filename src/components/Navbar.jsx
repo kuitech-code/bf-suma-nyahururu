@@ -69,10 +69,11 @@ function Navbar() {
         <NavLink
           className="navbar__brand"
           to="/"
-          aria-label="BF Suma Nyahururu home"
+          aria-label="Suma Health and Wellness home"
           onClick={closeMenu}
         >
           <img className="navbar__logo" src={logo} alt="" />
+          <span className="navbar__brand-name">and wellness</span>
         </NavLink>
 
         <button
