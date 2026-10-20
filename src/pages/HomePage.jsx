@@ -5,6 +5,7 @@ import Location from '../components/home/Location.jsx'
 import HomeHighlights from '../components/home/HomeHighlights.jsx'
 import FAQ from '../components/home/FAQ.jsx'
 import Technologies from '../components/home/Technologies.jsx'
+import CompanyHistory from '../components/home/CompanyHistory.jsx'
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <Location />
       {/* <SocialLinks /> */}
       <FAQ />
+      <CompanyHistory />
     </main>
   )
 }

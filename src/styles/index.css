@@ -830,6 +830,131 @@ a {
   font-size: 0.8rem;
 }
 
+/* BF Suma company history */
+.company-history {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #e7c5d7;
+  border-radius: 0;
+  background: linear-gradient(125deg, #f9e4ef 0%, #fffaf5 48%, #e4f2f5 100%);
+}
+
+.company-history::after {
+  position: absolute;
+  z-index: -1;
+  top: -5rem;
+  right: -4rem;
+  width: 15rem;
+  aspect-ratio: 1;
+  border: 1px solid rgb(112 36 138 / 12%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2rem rgb(255 255 255 / 22%), 0 0 0 4rem rgb(255 255 255 / 14%);
+  content: '';
+}
+
+.company-history__heading {
+  max-width: 55rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-history__eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--color-green);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.company-history h2 {
+  margin: 0 0 0.35rem;
+  color: var(--color-purple);
+  font-size: clamp(1.9rem, 6vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.company-history__subtitle {
+  margin: 0;
+  color: var(--color-magenta);
+  font-size: clamp(1.05rem, 3vw, 1.35rem);
+  font-weight: 700;
+}
+
+.company-history__body {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.company-history__copy p {
+  max-width: 48rem;
+  margin: 0 0 1rem;
+  color: #5f535c;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.company-history__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.company-history__visual {
+  align-self: center;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid rgb(255 255 255 / 78%);
+  background: rgb(255 255 255 / 74%);
+  box-shadow: 0 1rem 2rem rgb(56 35 67 / 9%);
+}
+
+.company-history__visual img {
+  display: block;
+  width: 100%;
+  max-height: 20rem;
+  object-fit: contain;
+}
+
+.company-history__visual figcaption {
+  margin-top: 0.65rem;
+  color: #5f535c;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.company-history__timeline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.company-history__timeline li {
+  min-width: 0;
+  padding: 0.9rem;
+  border-top: 4px solid var(--color-magenta);
+  background: rgb(255 255 255 / 78%);
+}
+
+.company-history__timeline li:nth-child(2) { border-color: var(--color-blue); }
+.company-history__timeline li:nth-child(3) { border-color: var(--color-green); }
+.company-history__timeline li:nth-child(4) { border-color: var(--color-orange); }
+.company-history__timeline li:nth-child(5) { border-color: var(--color-purple); }
+
+.company-history__timeline span {
+  color: var(--color-purple);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.company-history__timeline p {
+  margin: 0.3rem 0 0;
+  color: #5f535c;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 @media (min-width: 48rem) {
   .home-section {
     max-width: 72rem;
@@ -863,6 +988,17 @@ a {
   .technologies__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-content: start;
+  }
+
+  .company-history__body {
+    grid-template-columns: minmax(0, 1.2fr) minmax(16rem, 0.8fr);
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .company-history__timeline {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    margin-top: 2rem;
   }
 
   .technology-card:last-child {
