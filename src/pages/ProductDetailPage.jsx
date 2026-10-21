@@ -64,6 +64,19 @@ function ProductDetailPage() {
             </section>
           )}
 
+          {product.keyIngredients?.length > 0 && (
+            <section className="product-detail__section">
+              <h2>Key ingredients</h2>
+              <ul>
+                {product.keyIngredients.map((ingredient) => (
+                  <li key={ingredient.name}>
+                    <strong>{ingredient.name}:</strong> {ingredient.description}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {benefitItems?.length > 0 && (
             <section className="product-detail__section">
               <h2>Benefits</h2>

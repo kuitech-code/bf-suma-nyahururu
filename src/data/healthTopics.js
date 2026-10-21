@@ -89,7 +89,7 @@ export const healthTopics = [
   },
     {
     id: 'healthy-aging',
-    title: 'Healthy Aging & NMN',
+    title: 'Anti Aging',
     tagline: 'Cellular Longevity From Within',
     shortDescription: 'Learn about NMN products and dual-release formulations designed to support cellular energy and healthy aging.',
     description: 'Turn back the clock at a cellular level and reignite your body’s youth metabolism. Powered by cutting-edge, high-purity Nicotinamide Mononucleotide (NMN) and advanced liposomal dual-release technologies, our NMN Duo Release line acts as a powerful precursor to NAD+. It optimizes mitochondrial energy, protects natural gene expression, enhances insulin sensitivity, and counteracts age-linked physical decline.',

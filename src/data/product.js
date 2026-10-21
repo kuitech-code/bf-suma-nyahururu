@@ -3,7 +3,7 @@ export const productCategories = [
   'Cardiovascular Health',
   'Bone & Joint Health',
   'Immune Support',
-  'NMN & Healthy Aging',
+  'Anti Aging',
   'Digestive & Gut Health',
   'Personal Care',
   'Skincare',
@@ -29,7 +29,9 @@ const productImageFiles = {
   'novel-depile-capsules': 'novel-depile-capsules.png',
   'probio3-plus-probiotics': 'Probio3_Plus_Probiotics.png',
   'arthroxtra-tablets': 'ArthroXtra_Tablets.png',
-  'gluzo-joint-f-capsules': 'Gluzo-Joint_F_Capsules.png',
+  'gluzo-joint-f-capsules': 'Gluzo-Joint ultra pro Capsules.png',
+  'gluco-blocker-tea': 'Gyme effect.png',
+  'pressure-free-tea': 'Relivil tea.png',
   'zaminocal-plus-capsules': 'ZaminoCal_Plus_Capsules.png',
   'four-in-one-reishi-coffee': '4-in-1_Reishi_Coffee.png',
   'four-in-one-ginseng-coffee': '4-in-1_Ginseng_Coffee.png',
@@ -38,6 +40,8 @@ const productImageFiles = {
   'quad-reishi': 'QUAD-REISHI.png',
   'nmn-capsule': 'NMN_Capsule.png',
   'nmn-duo-release': 'NMN_Duo_Release.png',
+  'nmn-coffee': 'NMN Coffee.png',
+  'nmn-sharp-mind': 'NMN Sharp mind.png',
   'fem-inergy': 'FemInergy.png',
   'youth-ever': 'YouthEver.png',
   'nt-diarr-pills': 'NTDiarr_Pills.png',
@@ -50,12 +54,33 @@ const productImageFiles = {
   'cool-roll': 'Cool_Roll.png',
   'youth-refreshing-facial-cleanser': 'Youth_Refreshing_Facial_Cleanser.png',
   'youth-essence-toner': 'Youth_Essence_Toner.png',
-  'youth-essence-lotion': 'Youth_Essence_Lotion-cream.png',
+  'youth-essence-lotion': 'youth essense lotion.png',
   'youth-essence-facial-cream': 'Youth_Essence_Facial_Cream.png',
   'youth-essence-facial-mask': 'Youth_Essence_Facial_Mask.png',
 }
 
 const productContent = {
+  'gluco-blocker-tea': {
+    description:
+      'GymEffect Capsules are a dietary supplement marketed to support blood sugar management and healthy glucose metabolism.',
+    keyIngredients: [
+      {
+        name: 'Gymnema sylvestre',
+        description:
+          'A botanical ingredient traditionally used in products aimed at supporting glucose metabolism.',
+      },
+      {
+        name: 'Chromium',
+        description:
+          'An essential trace mineral that contributes to normal macronutrient metabolism and the maintenance of normal blood glucose levels.',
+      },
+      {
+        name: 'PQQ (Pyrroloquinoline Quinone)',
+        description:
+          'A compound with antioxidant properties that is being studied for its potential biological effects.',
+      },
+    ],
+  },
   'pressure-free-tea': {
     ingredients: 'Luoboma Tea and Green Tea',
     description:
@@ -93,16 +118,6 @@ const productContent = {
     ],
     caution:
       'Check the product label for allergen information, especially if you have a soy allergy.',
-  },
-  'gluco-blocker-tea': {
-    ingredients: 'Gymnema sylvestre, Camellia sinensis (green tea)',
-    description:
-      'Holistic herbal infusion target-formulated to support healthy pancreatic functions and glycemic balances.',
-    benefits: [
-      'Suppresses sugar cravings and reduces the overall intake and absorption of glucose within the body. Additionally, it works to increase the secretion of insulin and provides robust anti-oxidant properties that protect your cells from damaging free radicals.',
-    ],
-    caution:
-      'Monitor blood sugar levels during use, especially if taking glucose-lowering medication.',
   },
   'prostat-relax-capsules': {
     ingredients: 'Prostaep (flavone, polysaccharide)',
@@ -583,9 +598,8 @@ const productList = [
   },
   { 
     id: 'gluco-blocker-tea', 
-    name: 'Gluco-Blocker Tea', 
-    category: 'Healthy Beverages', 
-    packaging: '20 Tea Bags / Box' 
+    name: 'GymEffect Capsules', 
+    category: 'Cardiovascular Health', 
   },
   { 
     id: 'prostat-relax-capsules', 
@@ -631,7 +645,7 @@ const productList = [
   },
   { 
     id: 'pressure-free-tea', 
-    name: 'Pressure Free Tea', 
+    name: 'Relivin Tea', 
     category: 'Healthy Beverages' 
   },
   { 
@@ -642,7 +656,7 @@ const productList = [
   },
   { 
     id: 'gluzo-joint-f-capsules', 
-    name: 'Gluzo-Joint F Capsules', 
+    name: 'Gluzo-Joint Ultra Pro Capsules', 
     category: 'Bone & Joint Health', 
     packaging: "60 Capsules / Bottle" 
   },
@@ -683,12 +697,12 @@ const productList = [
   { 
     id: 'nmn-capsule', 
     name: 'NMN Capsule', 
-    category: 'NMN & Healthy Aging' 
+    category: 'Anti Aging' 
   },
   { 
     id: 'nmn-duo-release', 
     name: 'NMN Duo Release', 
-    category: 'NMN & Healthy Aging' 
+    category: 'Anti Aging' 
   },
   { 
     id: 'nmn-coffee', 
@@ -698,18 +712,18 @@ const productList = [
   { 
     id: 'nmn-sharp-mind', 
     name: 'NMN Sharp Mind', 
-    category: 'NMN & Healthy Aging' 
+    category: 'Anti Aging' 
   },
   { 
     id: 'fem-inergy', 
-    name: 'FemInergy', 
-    category: 'NMN & Healthy Aging', 
+    name: 'Feminergy', 
+    category: 'Anti Aging', 
     packaging: '60 Capsules' 
   },
   { 
     id: 'youth-ever', 
     name: 'YouthEver', 
-    category: 'NMN & Healthy Aging' 
+    category: 'Anti Aging' 
   },
   { 
     id: 'nt-diarr-pills', 
