@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kuitech-code.github.io/bf-suma-nyahururu/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sumahealth.co.ke/</loc>
+  </url>
+  <url>
+    <loc>https://sumahealth.co.ke/products/</loc>
+  </url>
+  <url>
+    <loc>https://sumahealth.co.ke/health-topics/</loc>
   </url>
 </urlset>

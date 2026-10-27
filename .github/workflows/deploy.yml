@@ -37,7 +37,7 @@ jobs:
       - name: Build the site
         run: npm run build
 
-      - name: Configure GitHub Pages route fallback
+      - name: Configure GitHub Pages 404 fallback
         run: cp dist/index.html dist/404.html
 
       - name: Set up GitHub Pages
