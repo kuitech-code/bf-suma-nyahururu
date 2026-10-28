@@ -27,7 +27,7 @@ function Footer() {
 
         <div className="site-footer__visit">
           <h2>Visit us</h2>
-          <p>Mbaria Complex bld, Kenyatta Road<br />Nyahururu</p>
+          <p>Mbaria Complex bld, Kenyatta Road<br />Nyahururu<br />Room 86, ground floor near KFA</p>
           <a href={`tel:${DISPLAY_PHONE_NUMBER.replaceAll(' ', '')}`}>
             {DISPLAY_PHONE_NUMBER}
           </a>
